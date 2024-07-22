@@ -8,13 +8,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloWorldJob {
+public class BackgroundJob {
 
     private final TransactionService transactionService;
     private final PersonService personService;
 
     @Autowired
-    public HelloWorldJob(TransactionService transactionService, PersonService personService){
+    public BackgroundJob(TransactionService transactionService, PersonService personService){
         this.transactionService = transactionService;
             this.personService = personService;
         }
